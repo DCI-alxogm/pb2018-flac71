@@ -1,23 +1,25 @@
-/*Creado por Fernanda Andrade el 22 de Agosto del 2018*/
+/*Creado por Fernanda Andrade el 29 de Agosto del 2018*/
 #include <stdio.h>
 #include <math.h>
 	int main(){
 	int opcion;
-	int C;
-	int K;
+	int C; 
+	int K;	
 	int F;
 	int C2;
 	float x;
-	float y;
-	float z;
+ 	float y; 	
+	float z; 
 	float r;
 	float th;
-	float e;
+ 	float e;
 	float x2;
-	float y2; 
-	float z2;
+ 	float y2;
+ 	float z2;
+	char opc='s';
 	
-	
+
+	while(opc==s){
 	printf("Teclear una opción \n");
 	printf("(1) para convertir temperaturas");
 	printf("(2) para convertir coordenadas");
@@ -62,11 +64,19 @@
 		y2=r*(sin(1))*(sin(0));
 		z2=r*cos(1);
 		printf("\n Ahora de esfericas a cartesianas es: %f, %f, %f \n", x2, y2, z2);
+	
+	printf("\n ¿Quieres realizar otra operación? Escribe s\n");
+	scanf("%s" ,&opc);
+
+
+
 		break;
 	default:
 		printf("Opción inválida");
-		break;
-	}
+		break;}
+}
+
 	return 0;
 }
+
 
