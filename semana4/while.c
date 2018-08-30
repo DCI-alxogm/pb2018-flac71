@@ -19,7 +19,7 @@
 	char opc='s';
 	
 
-	while(opc==s){
+	while(opc=='s'){
 	printf("Teclear una opción \n");
 	printf("(1) para convertir temperaturas");
 	printf("(2) para convertir coordenadas");
@@ -43,6 +43,9 @@
 		printf("\nla temperatura en grados Fahrenheit es: %i \n", F);
 		C2=(F-32)/1.8;
 		printf("\nDe F a C la operación es: %i \n", C2);
+	printf("\n ¿Quieres realizar otra operación? Escribe s\n");
+	scanf("%s" ,&opc);
+		
 		break;
 
 
@@ -67,10 +70,8 @@
 	
 	printf("\n ¿Quieres realizar otra operación? Escribe s\n");
 	scanf("%s" ,&opc);
-
-
-
 		break;
+
 	default:
 		printf("Opción inválida");
 		break;}
