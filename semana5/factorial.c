@@ -5,16 +5,16 @@
 
 int main(){
 
-	int r=1,a,b,fact=1;
+	int r=1,a,i,fact;
 
 	while(r==1){
-	
+	fact=1;
 	printf("\nDame un número entero\n");
 	scanf("%i", &a);
 
 
-	for(b=a;b>1;b--){
-	fact=fact*b;
+	for(i=a;i>1;i--){
+	fact=fact*i;
 	printf("\n El numero factorial de %i=%i\n",a,fact);
 }
 
