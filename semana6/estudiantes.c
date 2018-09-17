@@ -4,7 +4,16 @@
 #include<stdio.h>
 int main()
 {
-	int estudiantes=10,
+	int i, n, estudiantes=10, edad[n], genero[2];
+
+for(i=0; i<estudiantes; i++){
 
 	printf("\nEn Ingeniería Química Sustentable hay 10 alumnos\n");
-	printf("\nIntroduce la edad
+	printf("\nIntroduce la edad\n");
+	scanf("%i", &n);
+	printf("\nIntroduce el género de los estudiantes: 0 para los hombres, 1 para las mujeres\n");
+	scanf("%i", &genero);}
+	
+return 0;
+}
+	
